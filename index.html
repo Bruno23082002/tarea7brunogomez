@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Formulario de Registro de Empleados</h1>
+    <form id="formulario">
+        <div class="form-group">
+            <label for="empleado">Datos de Empleado:</label>
+            <input type="text" id="empleado" name="empleado" placeholder="Ingresa los datos del empleado" required>
+        </div>
+        <div class="form-group">
+            <label for="sueldo">Sueldo:</label>
+            <input type="number" id="sueldo" name="sueldo" placeholder="Ingresa el sueldo del empleado" required>
+        </div>
+        <div class="form-group">
+            <label for="observacion">Observación:</label>
+            <textarea id="observacion" name="observacion" placeholder="Ingresa un mensaje de observación" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="btn-submit">Enviar</button>
+            <button type="button" id="resetear" class="btn-reset" onclick="document.getElementById('formulario').reset()">Limpiar</button>
+        </div>
+    </form>
+    <div id="resultado"></div>
+</div>

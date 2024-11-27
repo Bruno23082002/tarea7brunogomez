@@ -1,0 +1,85 @@
+/* Estilo general del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+/* Contenedor de cada campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas de los campos */
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Campos al recibir foco */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #009879; /* Color verde para el borde */
+    outline: none;
+}
+
+/* Botones del formulario */
+.form-buttons {
+    display: flex;
+    justify-content: space-between; /* Botones alineados a los lados */
+    gap: 10px;
+}
+
+.btn-submit,
+.btn-reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de enviar */
+.btn-submit {
+    background-color: #009879; /* Verde */
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #007b5e; /* Verde más oscuro */
+}
+
+/* Botón de limpiar */
+.btn-reset {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #c62828; /* Rojo más oscuro */
+}
+
+/* Textarea (observación) */
+textarea {
+    resize: none; /* Evita redimensionar */
+    height: 100px; /* Altura fija */
+}
+
